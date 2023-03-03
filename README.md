@@ -7,14 +7,18 @@
 На страницу загружаются по 25 гифок.
 
 
-'''Pager(
+```kotlin
+Pager(
     config = PagingConfig(
         pageSize = 25,
         enablePlaceholders = false,
         initialLoadSize = 25
     ),
     pagingSourceFactory = { GifPagingSource(it, okHttpSource) }
-).flow'''
+).flow
+```
 
 
-![YouCut_20230303_170617968_AdobeExpress](https://user-images.githubusercontent.com/49618961/222763017-4b6ed844-0ad1-49ce-a08c-672f8814068d.gif)
+
+![YouCut_20230303_192152108-min](https://user-images.githubusercontent.com/49618961/222774864-02ba77c5-d8f9-4360-ae9a-836ae85c8572.gif)
+
