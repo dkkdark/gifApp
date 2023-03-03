@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentGifList">
+
+    <fragment
+        android:id="@+id/fragmentGifList"
+        android:name="com.kseniabl.gifapp.ui.FragmentGifList"
+        android:label="Gifs" >
+        <action
+            android:id="@+id/action_fragmentGifList_to_fragmentGifDetails"
+            app:destination="@id/fragmentGifDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGifDetails"
+        android:name="com.kseniabl.gifapp.ui.FragmentGifDetails"
+        android:label="About Gif" >
+        <argument
+            android:name="item"
+            app:argType="com.kseniabl.gifapp.network.models.GifModel" />
+    </fragment>
+</navigation>
