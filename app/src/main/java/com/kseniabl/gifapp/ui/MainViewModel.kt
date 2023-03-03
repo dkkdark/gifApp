@@ -26,9 +26,6 @@ class MainViewModel(
 
     private val searchBy = MutableStateFlow("")
 
-    private val _pageNumber = MutableStateFlow(1)
-    val pageNumber = _pageNumber.asStateFlow()
-
     private val _actionTrigger = MutableSharedFlow<UIActions>()
     val actionTrigger = _actionTrigger.asSharedFlow()
 

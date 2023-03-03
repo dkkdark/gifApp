@@ -18,8 +18,6 @@ class GifPagingSource(
             val offset = params.loadSize * pageIndex
             val gif = source.gifCall(query, params.loadSize, offset).data
 
-            Log.e("qqq", "gif $gif")
-
             return LoadResult.Page(
                 data = gif,
                 prevKey = if (pageIndex == 0) null else pageIndex - 1,

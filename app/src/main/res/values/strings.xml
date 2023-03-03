@@ -2,4 +2,7 @@
     <string name="app_name">GifApp</string>
     <string name="search">Type...</string>
     <string name="type_something_for_result">Type something for result</string>
+    <string name="rating">Rating:</string>
+    <string name="title">Title:</string>
+    <string name="username">Username:</string>
 </resources>
